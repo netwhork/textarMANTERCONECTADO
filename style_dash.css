@@ -463,11 +463,11 @@ h1 {
 /* Estilizando o alerta */
 .meu-alerta {
     position: fixed;
-    top: 10px;
-    right: 10px;
+ /*top: 990px; /* Aumentando o espaçamento da base da tela */
+   /* right: 90px;
     z-index: 1051; /* Maior que o modal do Bootstrap (1050) */
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
-    background: linear-gradient(to right, #172538 15px, black 15px);
+   /* background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+    background: linear-gradient(to right, #4CAF50 15px, #1E1E1E 15px);
     color: #fff;
     padding: 15px;
     border-radius: 8px;
@@ -477,3 +477,97 @@ h1 {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
+
+/* Adicione ao seu arquivo style_dash.css */
+
+/* Estilos para a SPA */
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .stat-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin: 10px 0;
+  }
+  
+  /* Animação de transição entre páginas */
+  .content {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilos para tabelas e formulários */
+  .filter-controls {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+  }
+  
+  .filter-controls .form-group {
+    flex: 1;
+  }
+  
+  .result-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .empresa-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+  
+  /* Melhoria para acessibilidade do menu lateral */
+  .menu-category:hover .category-header {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .submenu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 15px;
+    transition: padding-left 0.2s ease;
+  }
+  
+  /* Estado ativo para item de menu selecionado */
+  .submenu a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 3px solid #fff;
+    font-weight: bold;
+  }

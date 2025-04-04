@@ -60,7 +60,14 @@ body{
     margin-top: 10px;
     cursor: pointer;
 }
-
+.link {
+    text-decoration: none;
+    color: rgb(0, 0, 0); /* Cor padrão */
+  }
+  
+.link:hover {
+    color: rgb(0, 0, 243); /* Cor ao passar o mouse */
+  }
 .container button.hidden{
     background-color: transparent;
     border-color: #ffffff;
