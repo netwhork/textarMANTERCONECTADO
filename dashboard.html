@@ -953,9 +953,9 @@
                     exibirAlerta('Automação iniciada com sucesso!', 'sucesso');
                 })
                 .catch(error => {
-                    console.error('Email inválido.', error);
+                    console.error('Erro ao iniciar automação.', error);
                     // Exibe o alerta de erro com o mesmo estilo da notificação de cadastro
-                    exibirAlerta('Email inválido.', 'erro');
+                    exibirAlerta('Erro ao iniciar automação.', 'erro');
                 });
         }
 
